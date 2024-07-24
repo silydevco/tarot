@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>קריאת קלפי טארוט</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">דלג לתוכן הראשי</a>
+    <header role="banner">
+        <nav aria-label="Main Navigation">
+            <button id="nav-toggle" aria-controls="nav-menu" aria-expanded="false" aria-label="פתח תפריט ניווט">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            <ul id="nav-menu" class="nav-menu" hidden aria-hidden="true" role="menu">
+                <li role="none"><a role="menuitem" href="#main-content">דלג לתוכן הראשי</a></li>
+                <li role="none"><a role="menuitem" href="#about">אודות</a></li>
+                <li role="none"><a role="menuitem" href="#services">שירותים</a></li>
+                <li role="none"><a role="menuitem" href="#contact">צור קשר</a></li>
+            </ul>
+            <div id="menu-announcement" class="visually-hidden" aria-live="polite"></div>
+        </nav>
+    </header>
+    <nav aria-label="Breadcrumb" role="navigation">
+        <ul>
+            <li><a href="#">דף הבית</a></li>
+            <li><a href="#">אודות</a></li>
+            <li aria-current="page">קריאת קלפי טארוט</li>
+        </ul>
+    </nav>
+    <main id="main-content" role="main">
+        <section id="about" aria-labelledby="about-heading">
+            <h2 id="about-heading">אודותינו</h2>
+            <p>ברוכים הבאים למרכז קריאת קלפי טארוט, המקום שבו נפגשים הכוונה רוחנית ותובנות אישיות. עם שנים של ניסיון וידע מעמיק בקלפי טארוט, אנו מספקים קריאות מדויקות ומעמיקות שיעזרו לכם להבין את עצמכם ואת הסובבים אתכם בצורה טובה יותר. אנו מאמינים בכוחם של הקלפים להוביל לשינוי חיובי ולהעניק תובנות שיעזרו לכם לקבל החלטות נכונות בחיים.</p>
+            <p>במרכז שלנו, אנו מקדישים את כל המאמצים להבטיח שכל קריאה מתבצעת באווירה נוחה ותומכת, תוך שמירה על סודיות מוחלטת. הצוות שלנו מורכב ממומחים בתחום המנוסים בהבנת הקלפים ופרשנותם, ומטרתם להעניק לכם את הכלים הדרושים להתמודד עם האתגרים האישיים שלכם.</p>
+        </section>
+        <section id="services" aria-labelledby="services-heading">
+            <h2 id="services-heading">השירותים שלנו</h2>
+            <p>אנו מציעים מגוון רחב של שירותים בתחום קריאת קלפי טארוט, המיועדים לספק לכם תובנות והכוונה בנושאים שונים בחיים:</p>
+            <ul>
+                <li><strong>קריאות טארוט אישיות:</strong> הבנת עתידך וקריאת המציאות הנוכחית שלך דרך הקלפים, בנושאים כמו אהבה, קריירה, משפחה ועוד.</li>
+                <li><strong>ייעוץ רוחני:</strong> תובנות מעמיקות והכוונה אישית באמצעות קריאת קלפים, המותאמת לצרכים האישיים שלך.</li>
+                <li><strong>סדנאות וקורסים:</strong> לימוד מעמיק של קריאת קלפי טארוט, כולל טכניקות פרשנות ושימוש בקלפים ככלי רוחני.</li>
+                <li><strong>הכוונה רוחנית:</strong> פיתוח רוחני והעצמה אישית בעזרת קריאת קלפים, שיעזרו לך למצוא את הדרך שלך בחיים.</li>
+            </ul>
+            <button class="btn" aria-label="למידע נוסף על השירותים שלנו" id="openModalBtn">למידע נוסף</button>
+        </section>
+        <section id="contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">צור קשר</h2>
+            <p>אם אתם מחפשים תובנות נוספות על חייכם או מעוניינים בשירותים שלנו, נשמח לעזור. אתם מוזמנים ליצור איתנו קשר בטלפון, דוא"ל, או דרך הוואטסאפ:</p>
+            <p>טלפון: 123-456-7890</p>
+            <p>דוא"ל: info@example.com</p>
+            <button class="btn" id="whatsapp-button" aria-label="צור קשר בוואטסאפ">צור קשר בוואטסאפ</button>
+        </section>
+        <section id="gallery" aria-labelledby="gallery-heading">
+            <h2 id="gallery-heading">גלריה</h2>
+            <div class="image-gallery" aria-live="polite">
+                <img src="image1.jpg" alt="תיאור של תמונה 1">
+                <img src="image2.jpg" alt="תיאור של תמונה 2">
+                <img src="image3.jpg" alt="תיאור של תמונה 3">
+                <img src="image4.jpg" alt="תיאור של תמונה 4">
+            </div>
+        </section>
+        <section class="carousel" aria-labelledby="carousel-heading">
+            <h2 id="carousel-heading">קרוסלה</h2>
+            <div class="carousel">
+                <img src="carousel1.jpg" alt="תיאור של קרוסלה 1" class="active">
+                <img src="carousel2.jpg" alt="תיאור של קרוסלה 2">
+                <img src="carousel3.jpg" alt="תיאור של קרוסלה 3">
+                <button class="btn prev" aria-label="הקודם">&#10094;</button>
+                <button class="btn next" aria-label="הבא">&#10095;</button>
+            </div>
+        </section>
+    </main>
+    <footer role="contentinfo">
+        <p>&copy; 2024 קריאת קלפי טארוט. כל הזכויות שמורות.</p>
+    </footer>
+
+    <div id="modal" class="modal" role="dialog" aria-hidden="true" aria-labelledby="modalTitle" aria-describedby="modalDescription">
+        <div class="modal-content" role="document">
+            <button id="closeModalBtn" class="close" aria-label="סגור">&times;</button>
+            <h2 id="modalTitle">מידע נוסף על השירותים שלנו</h2>
+            <p id="modalDescription">במרכז קריאת קלפי טארוט שלנו, אנו מציעים לכם את הידע והניסיון של שנים רבות בקריאת קלפים. אנו כאן כדי לעזור לכם לקבל תובנות חשובות על החיים, ולהציע לכם הכוונה רוחנית המותאמת לצרכים האישיים שלכם. בין אם אתם מתמודדים עם החלטות קשות או מחפשים להעמיק את הבנתכם העצמית, אנחנו כאן עבורכם.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

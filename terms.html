@@ -10,6 +10,17 @@
     <a href="#main-content" class="skip-link">דלג לתוכן הראשי</a>
 
     <header role="banner">
+        <nav role="navigation" aria-label="Main Navigation">
+            <button id="menu-toggle" aria-controls="primary-navigation" aria-expanded="false" aria-label="Open menu">
+                <span class="hamburger-icon"></span>
+            </button>
+            <ul id="primary-navigation" class="nav-list" hidden>
+                <li><a href="/">ראשי</a></li>
+                <li><a href="#pricing">פתיחה בקלפים חבילות שירות</a></li>
+                <li><a href="#contact">צור קשר</a></li>
+            </ul>
+            <div id="menu-status" aria-live="polite" class="sr-only"></div>
+        </nav>
         <h1>תנאי השירות</h1>
     </header>
 
@@ -37,4 +48,5 @@
         </div>
     </footer>
 </body>
+<script src="script.js"></script>
 </html>
